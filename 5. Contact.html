@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Contact Us</title>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      background-color: #eedd82;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-top: 20px;
+    }
+
+    form {
+      background: rgba(255, 249, 213, 0.568);
+      width: 60%;
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    table {
+      width: 100%;
+      border-spacing: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #444;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="number"],
+    textarea {
+      width: 95%;
+      padding: 10px;
+      border: 1px solid #bbb;
+      border-radius: 6px;
+      font-size: 14px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #007bff;
+      box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+    }
+
+    textarea {
+      height: 100px;
+      resize: none;
+    }
+
+    input[type="radio"] {
+      margin: 0 8px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      background: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      margin: 10px 5px;
+      transition: background 0.3s;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background: #0056b3;
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-left: 20px;
+      margin-top: 30px;
+    }
+
+    p,
+    a {
+      margin-left: 20px;
+      font-size: 15px;
+      color: #444;
+    }
+
+    a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: #0056b3;
+    }
+
+    iframe {
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+      border: none;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h3 {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .gallery-link {
+      margin: 30px 0;
+    }
+
+    .gallery-link a {
+      text-decoration: none;
+      background: #0056b3;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .gallery-link a:hover {
+      background: #0056b3;
+    }
+
+    .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #eedd82;
+    padding: 15px 0;
+    z-index: 9999;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+    .navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.navbar ul li a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+body {
+    padding-top: 90px;
+}
+
+   footer {
+            width: 100%;
+            background: #ffffff;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 18px;
+            color: #333;
+            border-top: 3px solid #d4c36a;
+            box-shadow: 0 -3px 6px rgba(0,0,0,0.1);
+        }
+  </style>
+</head>
+<script src="my funtions.js"></script>
+<body>
+  <h1>Contact Us</h1>
+  <form>
+    <div>
+      <table>
+        <tr>
+          <td><label for="fname">First Name:</label></td>
+          <td><input type="text" id="fname" name="fname" "required"></td>
+        </tr>
+        <tr>
+          <td><label for="lname">Last Name:</label></td>
+          <td><input type="text" id="lname" name="lname"></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="eml" name="eml" placeholder="Example123@gmail.com"></td>
+        </tr>
+        <tr>
+          <td><label for="Contact">Contact No:</label></td>
+          <td><input type="tel" id="cn" name="cn" placeholder="+27** *** ****"></td>
+        </tr>
+        <tr>
+          <td><label for="dbirth">Date Of Birth:</label></td>
+          <td><input type="date" id="dbirth" name="dbirth"></td>
+        </tr>
+        <tr>
+          <td><label for="age">Age:</label></td>
+          <td><input type="number" id="age" name="age" min="0" max="50"></td>
+        </tr>
+
+        <tr>
+          <td><label for="gender">Gender:</label></td>
+          <td>
+            <label for="Male">M</label>
+            <input type="radio" id="Male" name="gender">
+            <label for="Female">F</label>
+            <input type="radio" id="Female" name="gender">
+            <label for="Other">O</label>
+            <input type="radio" id="Other" name="gender">
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="Message">Message:</label></td>
+          <td><textarea name="msg" id="msg"></textarea></td>
+        </tr>
+      </table>
+    </div>
+    <input type="Submit">
+    <input type="Reset">
+  </form>
+
+  <h2>Address</h2>
+  <p>Vlakvoëlvoëlji Avenue, Rooihuiskraal, Centurion, 0157 and Duiker Avenue, Zwartkop, Centurion, 0157.</p>
+
+  <h2>Phone</h2>
+  <p>082 884 2444</p>
+
+  <h2>E-mail</h2>
+  <p><a href="https://mail.google.com/">The.realfoodco.20@gmail.com</a></p>
+
+  <h2>WhatsApp</h2>
+  <p>+27 82 884 2444</p>
+
+  <h2>Google Maps</h2>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.0840254095306!2d28.149528076280866!3d-25.899608151639807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9564466913678b%3A0xa41789c35bd36a81!2sThe%20Real%20Food%20Co.%20Catering%20%26%20Events!5e0!3m2!1sen!2sza!4v1756253717121!5m2!1sen!2sza"
+    width="80%" height="450" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <nav class="navbar">
+    <ul>
+        <li><a href="1. Front Page.html">Front Page</a></li>
+        <li><a href="2. Homepage.html">Homepage</a></li>
+        <li><a href="3. About Us.html">About Us</a></li>
+        <li><a href="4. Services.html">Services</a></li>
+        <li><a href="5. Contact.html">Contact</a></li>
+        <li><a href="6. Gallery.html">Gallery</a></li>
+        <li><a href="7. Reviews.html">Reviews</a></li>
+        <li><a href="8. Extras.html">Extras</a></li>
+    </ul>
+</nav>
+   <footer>
+        © 2024 The Real Food Co. | All Rights Reserved
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        html { box-sizing: border-box; }
+        *, *:before, *:after { box-sizing: inherit; }
+
+        body {
+            background-color: #ffd54f;
+            padding-top: 90px;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #eedd82;
+            padding: 15px 0;
+            z-index: 9999;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .navbar ul { margin: 0; padding: 0; list-style: none; }
+        .navbar ul li { display: inline-block; margin: 0 12px; }
+        .navbar ul li a {
+            color: #333;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+        .navbar ul li a:hover {
+            background: #007bff;
+            color: #fff;
+        }
+
+        h1, h2, h3, p { text-align: center; }
+
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        @media screen and (max-width: 650px) {
+            .column { width: 100%; display: block; }
+        }
+
+        .card {
+            background: #eedd82;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 40%;
+            border-radius: 50%;
+        }
+
+        .fa-facebook { background: #2b5dc9; color: #fff; }
+        .fa-instagram { background: #b334a8; color: white; }
+        .fa-linkedin { background: #007bb5; color: white; }
+        .fa-whatsapp { background: #25d366; color: white; }
+        .fa-phone { background: #0080ff; color: #fff; }
+
+        .card i {
+            padding: 10px;
+            margin: 0 5px;
+            border-radius: 50%;
+            font-size: 20px;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+        }
+
+        footer {
+            width: 100%;
+            background: #ffffff;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 18px;
+            color: #333;
+            border-top: 3px solid #d4c36a;
+            box-shadow: 0 -3px 6px rgba(0,0,0,0.1);
+            margin-top: 40px;
+        }
+
+        .team-section { text-align: center; margin-top: 40px; }
+        .row::after { content: ""; display: table; clear: both; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="1. Front Page.html">Front Page</a></li>
+            <li><a href="2. Homepage.html">Homepage</a></li>
+            <li><a href="3. About Us.html">About Us</a></li>
+            <li><a href="4. Services.html">Services</a></li>
+            <li><a href="5. Contact.html">Contact</a></li>
+            <li><a href="6. Gallery.html">Gallery</a></li>
+            <li><a href="7. Reviews.html">Reviews</a></li>
+            <li><a href="8. Extras.html">Extras</a></li>
+        </ul>
+    </nav>
+
+    <h1>About Us</h1>
+    <p>
+        The Real Food Co. – also known as The Real Food Company. Founded in 2014, focusing on delivering delicious,<br>
+        beautiful and fresh food across Gauteng: Pretoria, Centurion, Midrand, and Johannesburg.
+    </p>
+
+    <h2>Mission and Vision</h2>
+    <h3>Mission</h3>
+    <p>100% Fresh – 100% Real – fresh, nutritious, beautiful, and authentic food.</p>
+
+    <h3>Vision</h3>
+    <p>Scaling production while retaining quality, serving Gauteng-wide efficiently.</p>
+
+    <h2 class="team-section">Meet Our Team</h2>
+
+    <div class="row">
+
+        <div class="column">
+            <div class="card">
+                <img src="image 1.jpeg" alt="Thabiso">
+                <h1>Thabiso Mothiana</h1>
+                <p class="title">CEO & Founder</p>
+                <p><a href="mailto:ThabisoMoth123@gmail.com">ThabisoMoth123@gmail.com</a></p>
+                <div>
+                    <a href="https://wa.me/27635450124"><i class="fa fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="tel:+27635450124"><i class="fa fa-phone"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="image 2.jpeg" alt="Tebogo">
+                <h1>Tebogo Seanego</h1>
+                <p class="title">Designer / Planner</p>
+                <p><a href="mailto:TebogoSean28@gmail.com">TebogoSean28@gmail.com</a></p>
+                <div>
+                    <a href="https://wa.me/27545692145"><i class="fa fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="tel:+27545692145"><i class="fa fa-phone"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="image 3.jpeg" alt="Buhle">
+                <h1>Buhle Mhlaba</h1>
+                <p class="title">Kitchen Manager</p>
+                <p><a href="mailto:BuhleMhlaba569@gmail.com">BuhleMhlaba569@gmail.com</a></p>
+                <div>
+                    <a href="https://wa.me/27124567898"><i class="fa fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="tel:+27124567898"><i class="fa fa-phone"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        © 2024 The Real Food Co. | All Rights Reserved
+    </footer>
+
+</body>
+</html>

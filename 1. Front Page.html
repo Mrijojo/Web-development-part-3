@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Front Page</title>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #eedd82;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-size: 70px;
+            font-weight: bold;
+            color: #000;
+            text-shadow: 0 0 20px #31db0f;
+            animation: float 4s ease-in-out infinite;
+            margin-bottom: 40px;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-25px); }
+            100% { transform: translateY(0px); }
+        }
+
+        nav {
+            background: #eedd82;
+            padding: 20px 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        nav ul li {
+            text-align: center;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 19px;
+            color: #333;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: #007BFF;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="hero-title">
+        Welcome to <br>The Real Food Co. Catering & Events
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="2. Homepage.html">Homepage</a></li>
+            <li><a href="3. About Us.html">About Us</a></li>
+            <li><a href="4. Services.html">Services</a></li>
+            <li><a href="5. Contact.html">Contact</a></li>
+            <li><a href="6. Gallery.html">Gallery</a></li>
+            <li><a href="7. Reviews.html">Reviews</a></li>
+            <li><a href="8. Extras.html">Extras</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

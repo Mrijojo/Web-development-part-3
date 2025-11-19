@@ -1,0 +1,53 @@
+# robots.txt for The Real Food Co. Catering & Events
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.therealfoodco.co.za/sitemap.xml
+
+# Allow all main pages
+Allow: /1.%20Front%20Page.html
+Allow: /2.%20Homepage.html
+Allow: /3.%20About%20Us.html
+Allow: /4.%20Services.html
+Allow: /5.%20Contact.html
+Allow: /6.%20Gallery.html
+Allow: /7.%20Reviews.html
+Allow: /8.%20Extras.html
+
+# Allow CSS and JS
+Allow: /*.css$
+Allow: /*.js$
+
+# Allow images
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.webp$
+Allow: /*.gif$
+
+# Disallow admin and private directories
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /cgi-bin/
+
+# Crawl delay (optional - adjust based on server capacity)
+Crawl-delay: 1
+
+# Specific bot instructions
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1

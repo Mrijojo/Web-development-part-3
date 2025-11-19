@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Reviews</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body {
+      background-color: #ffe96e;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 20px;
+      color: #000000;
+    }
+
+    h2 {
+      margin: 10px 0;
+      color: #000000;
+    }
+
+    p {
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .checked {
+      color: orange;
+    }
+
+    form {
+      margin-top: 30px;
+      display: inline-block;
+      text-align: left;
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0;
+      font-size: 16px;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    input[type="submit"] {
+      background: #007BFF;
+      color: white;
+    }
+
+    input[type="submit"]:hover {
+      background: #0056b3;
+    }
+
+    input[type="reset"] {
+      background: #ff4d4d;
+      color: white;
+      margin-left: 10px;
+    }
+
+    input[type="reset"]:hover {
+      background: #cc0000;
+    }
+
+    .extras-link {
+      margin: 30px 0;
+    }
+
+    .extras-link a {
+      text-decoration: none;
+      background: #0056b3;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .extras-link a:hover {
+      background: #0056b3;
+    }
+
+    .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #eedd82;
+    padding: 15px 0;
+    z-index: 9999;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+    .navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.navbar ul li a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+body {
+    padding-top: 90px;
+}
+
+   footer {
+            width: 100%;
+            background: #ffffff;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 18px;
+            color: #333;
+            border-top: 3px solid #d4c36a;
+            box-shadow: 0 -3px 6px rgba(0,0,0,0.1);
+        }
+  </style>
+</head>
+<script src="my funtions.js"></script>
+<body>
+
+  <h1>Customer Reviews</h1>
+
+  <h2>Testimonial</h2>
+  <p>
+    “The Real Food Co. made our wedding unforgettable – the food was fresh, beautifully presented, and the service was flawless. Our guests are still talking about it!” <br><br>
+    “We use them for all our corporate events. Professional, reliable, and the meals are always top-quality. It makes hosting staff trainings and executive lunches so much easier.” <br><br>
+    “From set-up to clean-up, everything was perfect. The grazing table was a hit, and their staff were friendly and attentive throughout.”
+  </p>
+
+  <form>
+    <h1>Reviews</h1>
+
+    <label>
+      <h2>Bad</h2>
+      <span class="fa fa-star checked"></span>
+      <input type="radio" name="rating" value="1">
+    </label>
+
+    <label>
+      <h2>Nice</h2>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <input type="radio" name="rating" value="2">
+    </label>
+
+    <label>
+      <h2>Good</h2>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <input type="radio" name="rating" value="3">
+    </label>
+
+    <label>
+      <h2>Very Good</h2>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <input type="radio" name="rating" value="4">
+    </label>
+
+    <label>
+      <h2>Excellent</h2>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <input type="radio" name="rating" value="5">
+    </label>
+
+    <label>
+      <b>Your Comment:</b><br>
+      <textarea name="review" rows="4" required></textarea>
+    </label>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+
+   <nav class="navbar">
+    <ul>
+        <li><a href="1. Front Page.html">Front Page</a></li>
+        <li><a href="2. Homepage.html">Homepage</a></li>
+        <li><a href="3. About Us.html">About Us</a></li>
+        <li><a href="4. Services.html">Services</a></li>
+        <li><a href="5. Contact.html">Contact</a></li>
+        <li><a href="6. Gallery.html">Gallery</a></li>
+        <li><a href="7. Reviews.html">Reviews</a></li>
+        <li><a href="8. Extras.html">Extras</a></li>
+    </ul>
+</nav>
+   <footer>
+        © 2024 The Real Food Co. | All Rights Reserved
+    </footer>
+</body>
+</html>
